@@ -13,9 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    @IBAction func onClickBtn(_ sender: Any) {
-        let vc = MLKitOCRViewController(nibName: "MLKitOCRViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+    @IBAction func onClickBtn(_ sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            let vc = MLKitOCRViewController(nibName: "MLKitOCRViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        default:
+            let vc = TesseractOCRViewController(nibName: "TesseractOCRViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        }
     }
 }
 

@@ -67,10 +67,12 @@ PODS:
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
   - Protobuf (3.19.1)
+  - TesseractOCRiOS (5.0.1)
 
 DEPENDENCIES:
   - GoogleMLKit/TextRecognition
   - GoogleMLKit/TextRecognitionKorean (= 2.3.0)
+  - TesseractOCRiOS
 
 SPEC REPOS:
   trunk:
@@ -89,6 +91,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Protobuf
+    - TesseractOCRiOS
 
 SPEC CHECKSUMS:
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
@@ -106,7 +109,8 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   Protobuf: 3724efa50cb2846d7ccebc8691c574e85fd74471
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
 
-PODFILE CHECKSUM: 0a1708b33d7942bf1f6549aa846fcbef25b54c6a
+PODFILE CHECKSUM: 7a7f467707278c8a265a15eab574384e34104641
 
 COCOAPODS: 1.11.2

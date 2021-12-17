@@ -17,6 +17,9 @@
 		3619F2BF27473B4700DA0749 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */; };
 		362E9B16274CA89100800C21 /* MLKitOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E9B14274CA89100800C21 /* MLKitOCRViewController.swift */; };
 		362E9B17274CA89100800C21 /* MLKitOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */; };
+		3660292727560D6E003BBF2C /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3660292627560D6E003BBF2C /* tessdata */; };
+		36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F410E627546B06007547EA /* TesseractOCRViewController.swift */; };
+		36F410E927546B06007547EA /* TesseractOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F410E727546B06007547EA /* TesseractOCRViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		362E9B14274CA89100800C21 /* MLKitOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRViewController.swift; sourceTree = "<group>"; };
 		362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MLKitOCRViewController.xib; sourceTree = "<group>"; };
+		3660292627560D6E003BBF2C /* tessdata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessdata; sourceTree = SOURCE_ROOT; };
+		36F410E627546B06007547EA /* TesseractOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractOCRViewController.swift; sourceTree = "<group>"; };
+		36F410E727546B06007547EA /* TesseractOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TesseractOCRViewController.xib; sourceTree = "<group>"; };
 		5337FBFC399EAE170E25F4DA /* Pods_ocr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E183C6C35927196710F8766 /* Pods-ocr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocr.release.xcconfig"; path = "Target Support Files/Pods-ocr/Pods-ocr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +75,7 @@
 		3619F2A627472FD800DA0749 /* ocr */ = {
 			isa = PBXGroup;
 			children = (
+				3660292627560D6E003BBF2C /* tessdata */,
 				3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */,
 				3619F2A727472FD800DA0749 /* AppDelegate.swift */,
 				3619F2AB27472FD800DA0749 /* ViewController.swift */,
@@ -79,6 +86,8 @@
 				3619F2B027472FD800DA0749 /* ocr.xcdatamodeld */,
 				362E9B14274CA89100800C21 /* MLKitOCRViewController.swift */,
 				362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */,
+				36F410E627546B06007547EA /* TesseractOCRViewController.swift */,
+				36F410E727546B06007547EA /* TesseractOCRViewController.xib */,
 			);
 			path = ocr;
 			sourceTree = "<group>";
@@ -163,6 +172,8 @@
 			files = (
 				3619F2B727472FDA00DA0749 /* LaunchScreen.storyboard in Resources */,
 				3619F2BF27473B4700DA0749 /* GoogleService-Info.plist in Resources */,
+				36F410E927546B06007547EA /* TesseractOCRViewController.xib in Resources */,
+				3660292727560D6E003BBF2C /* tessdata in Resources */,
 				3619F2B427472FDA00DA0749 /* Assets.xcassets in Resources */,
 				362E9B17274CA89100800C21 /* MLKitOCRViewController.xib in Resources */,
 				3619F2AF27472FD800DA0749 /* Main.storyboard in Resources */,
@@ -238,6 +249,7 @@
 				3619F2B227472FD800DA0749 /* ocr.xcdatamodeld in Sources */,
 				3619F2AC27472FD800DA0749 /* ViewController.swift in Sources */,
 				3619F2A827472FD800DA0749 /* AppDelegate.swift in Sources */,
+				36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */,
 				362E9B16274CA89100800C21 /* MLKitOCRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

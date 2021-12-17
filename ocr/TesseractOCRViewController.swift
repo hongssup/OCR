@@ -1,15 +1,15 @@
 //
-//  MLKitOCRViewController.swift
+//  TesseractOCRViewController.swift
 //  ocr
 //
-//  Created by SeoYeon Hong on 2021/11/23.
+//  Created by SeoYeon Hong on 2021/11/29.
 //
 
 import UIKit
-import MLKit
+import TesseractOCR
 
-class MLKitOCRViewController: UIViewController {
-    
+class TesseractOCRViewController: UIViewController, G8TesseractDelegate {
+
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var btnLibrary: UIButton!
@@ -19,7 +19,7 @@ class MLKitOCRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MLKit OCR Test"
+        title = "TesseractOCR Test"
         picker.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -50,21 +50,19 @@ class MLKitOCRViewController: UIViewController {
     }
     
     func getText(_ image: UIImage) {
-        let koreanOptions = KoreanTextRecognizerOptions()
-        let textRecognizer = TextRecognizer.textRecognizer(options: koreanOptions)
-        let visionImage = VisionImage(image: image)
-        visionImage.orientation = image.imageOrientation
-        
-        textRecognizer.process(visionImage) { result, error in
-            guard error == nil, let result = result else {
-                //error handling
-                print("error")
-                return
-            }
-            //recognized text
-            print(result.text)
-            self.textView.text = result.text
+        if let tesseract = G8Tesseract(language: "kor") {
+            tesseract.delegate = self
+            //tesseract.engineMode = .tesseractCubeCombined
+            tesseract.engineMode = .tesseractOnly
+            tesseract.pageSegmentationMode = .auto
+            tesseract.image = image
+            tesseract.recognize()
+            textView.text = tesseract.recognizedText
         }
+    }
+    
+    func progressImageRecognition(for tesseract: G8Tesseract) {
+        print("progress \(tesseract.progress)%")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -79,7 +77,7 @@ class MLKitOCRViewController: UIViewController {
     }
 }
 
-extension MLKitOCRViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension TesseractOCRViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {

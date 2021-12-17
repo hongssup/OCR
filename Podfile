@@ -6,11 +6,8 @@ target 'ocr' do
   use_frameworks!
 
   # Pods for ocr
-  #pod 'Firebase/Analytics'
-  #pod 'Firebase/MLVision'
-  #pod 'Firebase/MLVisionTextModel'
   pod 'GoogleMLKit/TextRecognition'
   pod 'GoogleMLKit/TextRecognitionKorean', '2.3.0'
-  #pod 'GoogleUtilities'
+  pod 'TesseractOCRiOS'
 
 end
