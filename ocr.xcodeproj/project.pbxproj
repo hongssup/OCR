@@ -27,6 +27,10 @@
 		364A8B792799502200BA5976 /* eng.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6F2799502200BA5976 /* eng.cube.nn */; };
 		364A8B7A2799502200BA5976 /* eng.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B702799502200BA5976 /* eng.cube.params */; };
 		364A8B7B2799502200BA5976 /* eng.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B712799502200BA5976 /* eng.cube.size */; };
+		364A8B7E279952BF00BA5976 /* ClovaOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A8B7C279952BF00BA5976 /* ClovaOCRViewController.swift */; };
+		364A8B7F279952BF00BA5976 /* ClovaOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B7D279952BF00BA5976 /* ClovaOCRViewController.xib */; };
+		364A8B822799547300BA5976 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A8B812799547300BA5976 /* Constants.swift */; };
+		364A8B852799549300BA5976 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A8B842799549300BA5976 /* APIManager.swift */; };
 		36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F410E627546B06007547EA /* TesseractOCRViewController.swift */; };
 		36F410E927546B06007547EA /* TesseractOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F410E727546B06007547EA /* TesseractOCRViewController.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +58,10 @@
 		364A8B6F2799502200BA5976 /* eng.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.cube.nn; sourceTree = "<group>"; };
 		364A8B702799502200BA5976 /* eng.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.params; sourceTree = "<group>"; };
 		364A8B712799502200BA5976 /* eng.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.size; sourceTree = "<group>"; };
+		364A8B7C279952BF00BA5976 /* ClovaOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClovaOCRViewController.swift; sourceTree = "<group>"; };
+		364A8B7D279952BF00BA5976 /* ClovaOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClovaOCRViewController.xib; sourceTree = "<group>"; };
+		364A8B812799547300BA5976 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		364A8B842799549300BA5976 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		36F410E627546B06007547EA /* TesseractOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractOCRViewController.swift; sourceTree = "<group>"; };
 		36F410E727546B06007547EA /* TesseractOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TesseractOCRViewController.xib; sourceTree = "<group>"; };
 		5337FBFC399EAE170E25F4DA /* Pods_ocr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +103,8 @@
 			children = (
 				364A8B6727994FFF00BA5976 /* tessdata */,
 				3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */,
+				364A8B802799546000BA5976 /* Common */,
+				364A8B832799548100BA5976 /* Server */,
 				3619F2A727472FD800DA0749 /* AppDelegate.swift */,
 				3619F2AB27472FD800DA0749 /* ViewController.swift */,
 				3619F2AD27472FD800DA0749 /* Main.storyboard */,
@@ -106,6 +116,8 @@
 				362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */,
 				36F410E627546B06007547EA /* TesseractOCRViewController.swift */,
 				36F410E727546B06007547EA /* TesseractOCRViewController.xib */,
+				364A8B7C279952BF00BA5976 /* ClovaOCRViewController.swift */,
+				364A8B7D279952BF00BA5976 /* ClovaOCRViewController.xib */,
 			);
 			path = ocr;
 			sourceTree = "<group>";
@@ -125,6 +137,22 @@
 				364A8B6D2799502200BA5976 /* kor.traineddata */,
 			);
 			path = tessdata;
+			sourceTree = "<group>";
+		};
+		364A8B802799546000BA5976 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				364A8B812799547300BA5976 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		364A8B832799548100BA5976 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				364A8B842799549300BA5976 /* APIManager.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		60592F7042A2946639DB81C5 /* Pods */ = {
@@ -208,6 +236,7 @@
 				364A8B792799502200BA5976 /* eng.cube.nn in Resources */,
 				364A8B762799502200BA5976 /* eng.traineddata in Resources */,
 				3619F2B727472FDA00DA0749 /* LaunchScreen.storyboard in Resources */,
+				364A8B7F279952BF00BA5976 /* ClovaOCRViewController.xib in Resources */,
 				364A8B722799502200BA5976 /* eng.cube.fold in Resources */,
 				3619F2BF27473B4700DA0749 /* GoogleService-Info.plist in Resources */,
 				364A8B732799502200BA5976 /* eng.tesseract_cube.nn in Resources */,
@@ -291,10 +320,13 @@
 			files = (
 				3619F2B227472FD800DA0749 /* ocr.xcdatamodeld in Sources */,
 				3619F2AC27472FD800DA0749 /* ViewController.swift in Sources */,
+				364A8B7E279952BF00BA5976 /* ClovaOCRViewController.swift in Sources */,
+				364A8B852799549300BA5976 /* APIManager.swift in Sources */,
 				3619F2A827472FD800DA0749 /* AppDelegate.swift in Sources */,
 				364A8B752799502200BA5976 /* eng.cube.lm in Sources */,
 				36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */,
 				362E9B16274CA89100800C21 /* MLKitOCRViewController.swift in Sources */,
+				364A8B822799547300BA5976 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
