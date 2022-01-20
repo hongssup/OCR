@@ -9,5 +9,7 @@ target 'ocr' do
   pod 'GoogleMLKit/TextRecognition'
   pod 'GoogleMLKit/TextRecognitionKorean', '2.3.0'
   pod 'TesseractOCRiOS'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
 
 end

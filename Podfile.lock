@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (5.4.4)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
   - GoogleDataTransport (9.1.2):
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
@@ -70,12 +73,16 @@ PODS:
   - TesseractOCRiOS (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - GoogleMLKit/TextRecognition
   - GoogleMLKit/TextRecognitionKorean (= 2.3.0)
   - TesseractOCRiOS
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - GoogleDataTransport
     - GoogleMLKit
     - GoogleToolboxForMac
@@ -94,6 +101,8 @@ SPEC REPOS:
     - TesseractOCRiOS
 
 SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleMLKit: 53d5adbee0fe5a701e970f1387d2cfececd5bc50
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
@@ -111,6 +120,6 @@ SPEC CHECKSUMS:
   Protobuf: 3724efa50cb2846d7ccebc8691c574e85fd74471
   TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
 
-PODFILE CHECKSUM: 7a7f467707278c8a265a15eab574384e34104641
+PODFILE CHECKSUM: b6096d23aa7119d13d0dcdcc23626ca9aae98ebc
 
 COCOAPODS: 1.11.2

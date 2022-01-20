@@ -17,7 +17,16 @@
 		3619F2BF27473B4700DA0749 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */; };
 		362E9B16274CA89100800C21 /* MLKitOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E9B14274CA89100800C21 /* MLKitOCRViewController.swift */; };
 		362E9B17274CA89100800C21 /* MLKitOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */; };
-		3660292727560D6E003BBF2C /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3660292627560D6E003BBF2C /* tessdata */; };
+		364A8B722799502200BA5976 /* eng.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B682799502200BA5976 /* eng.cube.fold */; };
+		364A8B732799502200BA5976 /* eng.tesseract_cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B692799502200BA5976 /* eng.tesseract_cube.nn */; };
+		364A8B742799502200BA5976 /* eng.cube.word-freq in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6A2799502200BA5976 /* eng.cube.word-freq */; };
+		364A8B752799502200BA5976 /* eng.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = 364A8B6B2799502200BA5976 /* eng.cube.lm */; };
+		364A8B762799502200BA5976 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6C2799502200BA5976 /* eng.traineddata */; };
+		364A8B772799502200BA5976 /* kor.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6D2799502200BA5976 /* kor.traineddata */; };
+		364A8B782799502200BA5976 /* eng.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6E2799502200BA5976 /* eng.cube.bigrams */; };
+		364A8B792799502200BA5976 /* eng.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B6F2799502200BA5976 /* eng.cube.nn */; };
+		364A8B7A2799502200BA5976 /* eng.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B702799502200BA5976 /* eng.cube.params */; };
+		364A8B7B2799502200BA5976 /* eng.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = 364A8B712799502200BA5976 /* eng.cube.size */; };
 		36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F410E627546B06007547EA /* TesseractOCRViewController.swift */; };
 		36F410E927546B06007547EA /* TesseractOCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F410E727546B06007547EA /* TesseractOCRViewController.xib */; };
 /* End PBXBuildFile section */
@@ -35,7 +44,16 @@
 		3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		362E9B14274CA89100800C21 /* MLKitOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRViewController.swift; sourceTree = "<group>"; };
 		362E9B15274CA89100800C21 /* MLKitOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MLKitOCRViewController.xib; sourceTree = "<group>"; };
-		3660292627560D6E003BBF2C /* tessdata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessdata; sourceTree = SOURCE_ROOT; };
+		364A8B682799502200BA5976 /* eng.cube.fold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.fold; sourceTree = "<group>"; };
+		364A8B692799502200BA5976 /* eng.tesseract_cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.tesseract_cube.nn; sourceTree = "<group>"; };
+		364A8B6A2799502200BA5976 /* eng.cube.word-freq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eng.cube.word-freq"; sourceTree = "<group>"; };
+		364A8B6B2799502200BA5976 /* eng.cube.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = eng.cube.lm; sourceTree = "<group>"; };
+		364A8B6C2799502200BA5976 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
+		364A8B6D2799502200BA5976 /* kor.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = kor.traineddata; sourceTree = "<group>"; };
+		364A8B6E2799502200BA5976 /* eng.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.bigrams; sourceTree = "<group>"; };
+		364A8B6F2799502200BA5976 /* eng.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.cube.nn; sourceTree = "<group>"; };
+		364A8B702799502200BA5976 /* eng.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.params; sourceTree = "<group>"; };
+		364A8B712799502200BA5976 /* eng.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.size; sourceTree = "<group>"; };
 		36F410E627546B06007547EA /* TesseractOCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractOCRViewController.swift; sourceTree = "<group>"; };
 		36F410E727546B06007547EA /* TesseractOCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TesseractOCRViewController.xib; sourceTree = "<group>"; };
 		5337FBFC399EAE170E25F4DA /* Pods_ocr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +93,7 @@
 		3619F2A627472FD800DA0749 /* ocr */ = {
 			isa = PBXGroup;
 			children = (
-				3660292627560D6E003BBF2C /* tessdata */,
+				364A8B6727994FFF00BA5976 /* tessdata */,
 				3619F2BE27473B4700DA0749 /* GoogleService-Info.plist */,
 				3619F2A727472FD800DA0749 /* AppDelegate.swift */,
 				3619F2AB27472FD800DA0749 /* ViewController.swift */,
@@ -90,6 +108,23 @@
 				36F410E727546B06007547EA /* TesseractOCRViewController.xib */,
 			);
 			path = ocr;
+			sourceTree = "<group>";
+		};
+		364A8B6727994FFF00BA5976 /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+				364A8B6E2799502200BA5976 /* eng.cube.bigrams */,
+				364A8B682799502200BA5976 /* eng.cube.fold */,
+				364A8B6B2799502200BA5976 /* eng.cube.lm */,
+				364A8B6F2799502200BA5976 /* eng.cube.nn */,
+				364A8B702799502200BA5976 /* eng.cube.params */,
+				364A8B712799502200BA5976 /* eng.cube.size */,
+				364A8B6A2799502200BA5976 /* eng.cube.word-freq */,
+				364A8B692799502200BA5976 /* eng.tesseract_cube.nn */,
+				364A8B6C2799502200BA5976 /* eng.traineddata */,
+				364A8B6D2799502200BA5976 /* kor.traineddata */,
+			);
+			path = tessdata;
 			sourceTree = "<group>";
 		};
 		60592F7042A2946639DB81C5 /* Pods */ = {
@@ -170,13 +205,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364A8B792799502200BA5976 /* eng.cube.nn in Resources */,
+				364A8B762799502200BA5976 /* eng.traineddata in Resources */,
 				3619F2B727472FDA00DA0749 /* LaunchScreen.storyboard in Resources */,
+				364A8B722799502200BA5976 /* eng.cube.fold in Resources */,
 				3619F2BF27473B4700DA0749 /* GoogleService-Info.plist in Resources */,
+				364A8B732799502200BA5976 /* eng.tesseract_cube.nn in Resources */,
 				36F410E927546B06007547EA /* TesseractOCRViewController.xib in Resources */,
-				3660292727560D6E003BBF2C /* tessdata in Resources */,
+				364A8B7B2799502200BA5976 /* eng.cube.size in Resources */,
 				3619F2B427472FDA00DA0749 /* Assets.xcassets in Resources */,
+				364A8B7A2799502200BA5976 /* eng.cube.params in Resources */,
+				364A8B772799502200BA5976 /* kor.traineddata in Resources */,
 				362E9B17274CA89100800C21 /* MLKitOCRViewController.xib in Resources */,
 				3619F2AF27472FD800DA0749 /* Main.storyboard in Resources */,
+				364A8B782799502200BA5976 /* eng.cube.bigrams in Resources */,
+				364A8B742799502200BA5976 /* eng.cube.word-freq in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +292,7 @@
 				3619F2B227472FD800DA0749 /* ocr.xcdatamodeld in Sources */,
 				3619F2AC27472FD800DA0749 /* ViewController.swift in Sources */,
 				3619F2A827472FD800DA0749 /* AppDelegate.swift in Sources */,
+				364A8B752799502200BA5976 /* eng.cube.lm in Sources */,
 				36F410E827546B06007547EA /* TesseractOCRViewController.swift in Sources */,
 				362E9B16274CA89100800C21 /* MLKitOCRViewController.swift in Sources */,
 			);
