@@ -58,10 +58,24 @@ class ClovaOCRViewController: UIViewController {
         params.updateValue(Int64(Date().timeIntervalSince1970 * 1000), forKey: "timestamp")
         
         APIManager.requestWithNameMultiPart(requestName: apigwURL, image: image, parameters: params, progress: false) { (isSuccess, responseData) in
-            if (isSuccess) {
-
-            } else {
-                print("실패")
+            do {
+                if (isSuccess) {
+                    let decoder = JSONDecoder()
+                    let str = try JSONSerialization.data(withJSONObject: responseData!, options: .prettyPrinted)
+                    let data = try decoder.decode(ClovaOCRModel.self, from:str)
+                    if data != nil {
+                        let num = data.images[0].fields.count
+                        for i in 0...num-1 {
+                            let text = data.images[0].fields[i].inferText
+                            let y = data.images[0].fields[i].boundingPoly.vertices[0].y
+                            let height = data.images[0].fields[i].boundingPoly.vertices[2].y - data.images[0].fields[i].boundingPoly.vertices[0].y
+                        }
+                    }
+                } else {
+                    print("실패")
+                }
+            } catch {
+                
             }
         }
     }

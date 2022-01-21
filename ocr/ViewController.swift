@@ -19,8 +19,12 @@ class ViewController: UIViewController {
             let vc = MLKitOCRViewController(nibName: "MLKitOCRViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             break
-        default:
+        case 2:
             let vc = TesseractOCRViewController(nibName: "TesseractOCRViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        default:
+            let vc = ClovaOCRViewController(nibName: "ClovaOCRViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             break
         }

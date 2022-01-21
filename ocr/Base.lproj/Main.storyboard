@@ -33,12 +33,22 @@
                                     <action selector="onClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZ8-KZ-ujk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-GT-VXQ">
+                                <rect key="frame" x="134.5" y="360" width="145" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Naver CLOVA OCR"/>
+                                <connections>
+                                    <action selector="onClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jd1-Vv-EQK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="o3L-Di-WVM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="2tI-Zz-RFg"/>
+                            <constraint firstItem="gc3-GT-VXQ" firstAttribute="top" secondItem="E0a-Cd-9X8" secondAttribute="bottom" constant="30" id="Faj-nQ-nkx"/>
                             <constraint firstItem="E0a-Cd-9X8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gjv-vs-1Cg"/>
+                            <constraint firstItem="gc3-GT-VXQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I1z-N3-YxJ"/>
                             <constraint firstItem="o3L-Di-WVM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEf-7g-WhQ"/>
                             <constraint firstItem="E0a-Cd-9X8" firstAttribute="top" secondItem="o3L-Di-WVM" secondAttribute="bottom" constant="30" id="rDc-3f-1Aa"/>
                         </constraints>
