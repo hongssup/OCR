@@ -15,6 +15,9 @@ class ClovaOCRViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     let picker = UIImagePickerController()
+    var textArr = [String]()
+    var verticeArr = [[Float]]()
+    var linesArr = [[String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,8 +71,12 @@ class ClovaOCRViewController: UIViewController {
                         for i in 0...num-1 {
                             let text = data.images[0].fields[i].inferText
                             let y = data.images[0].fields[i].boundingPoly.vertices[0].y
+                            let y2 = data.images[0].fields[i].boundingPoly.vertices[2].y
                             let height = data.images[0].fields[i].boundingPoly.vertices[2].y - data.images[0].fields[i].boundingPoly.vertices[0].y
+                            self.textArr.append(text)
+                            self.verticeArr.append([y, y2, height])
                         }
+                        self.readLines()
                     }
                 } else {
                     print("실패")
@@ -78,6 +85,21 @@ class ClovaOCRViewController: UIViewController {
                 
             }
         }
+    }
+    
+    func readLines() {
+        linesArr.append([textArr[0]])
+        var j = 0
+        for i in 0...verticeArr.count-2 {
+            //같은 줄
+            if (verticeArr[i][0] <= verticeArr[i+1][0] + verticeArr[i+1][2]/2) && (verticeArr[i+1][0] + verticeArr[i+1][2]/2 <= verticeArr[i][1]) {
+                linesArr[j].append(textArr[i+1])
+            } else { //다음 줄
+                linesArr.append([textArr[i+1]])
+                j+=1
+            }
+        }
+        print(linesArr)
     }
 }
 
