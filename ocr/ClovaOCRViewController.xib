@@ -13,7 +13,9 @@
             <connections>
                 <outlet property="btnCamera" destination="hVM-NG-rJM" id="SUI-Nk-XZY"/>
                 <outlet property="btnLibrary" destination="Zyv-fE-fSM" id="DRw-cu-6wa"/>
+                <outlet property="dateLabel" destination="JWk-KS-L7D" id="r1H-HD-2hz"/>
                 <outlet property="imgView" destination="K2x-5l-IMT" id="H2w-0h-dul"/>
+                <outlet property="productLabel" destination="AgT-uC-8yj" id="GVC-fJ-np5"/>
                 <outlet property="textView" destination="Jss-4e-AgV" id="IpB-sy-uIb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -77,16 +79,32 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWk-KS-L7D">
+                    <rect key="frame" x="48" y="408" width="4.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgT-uC-8yj">
+                    <rect key="frame" x="48" y="436.5" width="4.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jss-4e-AgV" secondAttribute="bottom" constant="20" id="825-tx-QiN"/>
+                <constraint firstItem="JWk-KS-L7D" firstAttribute="top" secondItem="OKO-Ow-Mwk" secondAttribute="bottom" constant="30" id="Ghl-EU-X47"/>
                 <constraint firstItem="Jss-4e-AgV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LBS-yL-ani"/>
+                <constraint firstItem="JWk-KS-L7D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="N7B-tu-O4g"/>
                 <constraint firstItem="Jss-4e-AgV" firstAttribute="top" secondItem="OKO-Ow-Mwk" secondAttribute="bottom" constant="16" id="UhP-gr-Y6B"/>
                 <constraint firstItem="OKO-Ow-Mwk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="VSV-nu-ZEY"/>
+                <constraint firstItem="AgT-uC-8yj" firstAttribute="top" secondItem="JWk-KS-L7D" secondAttribute="bottom" constant="8" id="c36-s6-xC2"/>
                 <constraint firstItem="OKO-Ow-Mwk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dQS-a9-bor"/>
                 <constraint firstItem="OKO-Ow-Mwk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="heX-PU-bPn"/>
+                <constraint firstItem="AgT-uC-8yj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="m3a-HM-ZwO"/>
                 <constraint firstItem="Jss-4e-AgV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="pb2-Yy-tLh"/>
             </constraints>
             <point key="canvasLocation" x="132" y="100"/>
